@@ -31,8 +31,8 @@ public class Employee {
     @NotBlank(message = "address cannot be empty")
     @Pattern(regexp = "[\\w.\\-/,]*", message = "address cannot contains illegal character")
     private String address;
-    @NotBlank(message = "cubicleNo cannot be empty")
-    @Pattern(regexp = "[A-Za-z0-9\\-]", message = "cubicleNo cannot contains illegal character")
+    @NotBlank(message = "cubicleNo cannot be empty!")
+    @Pattern(regexp = "[A-Za-z0-9\\-]*", message = "cubicleNo cannot contains illegal characters.")
     private String cubicleNo;
 
     public Employee() {
